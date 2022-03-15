@@ -1,5 +1,33 @@
 # @backstage/plugin-techdocs
 
+## 0.16.0
+
+### Minor Changes
+
+- 700d93ff41: Removed deprecated exports, including:
+
+  - deprecated `DocsResultListItem` is now deleted and fully replaced with `TechDocsSearchResultListItem`
+  - deprecated `TechDocsPage` is now deleted and fully replaced with `TechDocsReaderPage`
+  - deprecated `TechDocsPageHeader` is now deleted and fully replaced with `TechDocsReaderPageHeader`
+  - deprecated `TechDocsPageHeaderProps` is now deleted and fully replaced with `TechDocsReaderPageHeaderProps`
+  - deprecated `TechDocsPageRenderFunction` is now deleted and fully replaced with `TechDocsReaderPageRenderFunction`
+  - deprecated config `techdocs.requestUrl` is now deleted and fully replaced with the discoveryApi
+
+### Patch Changes
+
+- a422d7ce5e: chore(deps): bump `@testing-library/react` from 11.2.6 to 12.1.3
+- f24ef7864e: Minor typo fixes
+- 06af9e8d17: Long sidebars will no longer overflow the footer and will properly show a scrollbar when needed.
+- Updated dependencies
+  - @backstage/core-components@0.9.2
+  - @backstage/core-plugin-api@0.8.1
+  - @backstage/integration-react@0.1.26
+  - @backstage/plugin-catalog-react@0.10.0
+  - @backstage/plugin-catalog@0.10.1
+  - @backstage/plugin-search@0.7.4
+  - @backstage/catalog-model@0.14.0
+  - @backstage/integration@0.8.1
+
 ## 0.15.1
 
 ### Patch Changes

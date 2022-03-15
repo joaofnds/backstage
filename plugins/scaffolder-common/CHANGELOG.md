@@ -1,5 +1,13 @@
 # @backstage/plugin-scaffolder-common
 
+## 0.3.1
+
+### Patch Changes
+
+- c8475ab3bb: Adding some documentation for exported things
+- Updated dependencies
+  - @backstage/catalog-model@0.14.0
+
 ## 0.3.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @backstage/plugin-search-backend-node
 
+## 0.5.2
+
+### Patch Changes
+
+- f24ef7864e: Minor typo fixes
+
 ## 0.5.1
 
 ### Patch Changes

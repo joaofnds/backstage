@@ -1,5 +1,11 @@
 # @backstage/plugin-permission-common
 
+## 0.5.3
+
+### Patch Changes
+
+- f24ef7864e: Minor typo fixes
+
 ## 0.5.2
 
 ### Patch Changes

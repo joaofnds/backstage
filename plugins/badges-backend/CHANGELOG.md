@@ -1,5 +1,16 @@
 # @backstage/plugin-badges-backend
 
+## 0.1.24
+
+### Patch Changes
+
+- 89c7e47967: Minor README update
+- f24ef7864e: Minor typo fixes
+- Updated dependencies
+  - @backstage/backend-common@0.13.1
+  - @backstage/catalog-model@0.14.0
+  - @backstage/catalog-client@0.10.0
+
 ## 0.1.23
 
 ### Patch Changes

@@ -1,5 +1,27 @@
 # @backstage/plugin-techdocs-backend
 
+## 0.15.0
+
+### Minor Changes
+
+- 700d93ff41: Removed deprecated exports, including:
+
+  - deprecated config `generators` is now deleted and fully replaced with `techdocs.generator`
+  - deprecated config `generators.techdocs` is now deleted and fully replaced with `techdocs.generator.runIn`
+  - deprecated config `techdocs.requestUrl` is now deleted
+  - deprecated config `techdocs.storageUrl` is now deleted
+  - deprecated `createHttpResponse` is now deleted and calls to `/sync/:namespace/:kind/:name` needs to be done by an EventSource.
+
+### Patch Changes
+
+- f24ef7864e: Minor typo fixes
+- Updated dependencies
+  - @backstage/backend-common@0.13.1
+  - @backstage/catalog-model@0.14.0
+  - @backstage/integration@0.8.1
+  - @backstage/catalog-client@0.10.0
+  - @backstage/plugin-techdocs-node@0.12.0
+
 ## 0.14.2
 
 ### Patch Changes

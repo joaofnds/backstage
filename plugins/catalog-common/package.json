@@ -34,11 +34,11 @@
     "clean": "backstage-cli package clean"
   },
   "dependencies": {
-    "@backstage/plugin-permission-common": "^0.5.2",
-    "@backstage/search-common": "^0.3.1"
+    "@backstage/plugin-permission-common": "^0.5.3",
+    "@backstage/search-common": "^0.3.2"
   },
   "devDependencies": {
-    "@backstage/cli": "^0.15.2"
+    "@backstage/cli": "^0.16.0"
   },
   "files": [
     "dist",

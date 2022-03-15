@@ -1,5 +1,20 @@
 # @backstage/plugin-techdocs-node
 
+## 0.12.0
+
+### Minor Changes
+
+- 700d93ff41: - `DirectoryPreparer` now uses private constructor. Use static fromConfig method to instantiate.
+  - `UrlPreparer` now uses private constructor. Use static fromConfig method to instantiate.
+
+### Patch Changes
+
+- f24ef7864e: Minor typo fixes
+- Updated dependencies
+  - @backstage/backend-common@0.13.1
+  - @backstage/catalog-model@0.14.0
+  - @backstage/integration@0.8.1
+
 ## 0.11.12
 
 ### Patch Changes

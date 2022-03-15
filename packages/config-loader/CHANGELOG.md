@@ -1,5 +1,12 @@
 # @backstage/config-loader
 
+## 0.9.8
+
+### Patch Changes
+
+- 664821371e: The `typescript-json-schema` dependency that is used during schema collection is now lazy loaded, as it eagerly loads in the TypeScript compiler.
+- f910c2a3f8: build(deps): bump `typescript-json-schema` from 0.52.0 to 0.53.0
+
 ## 0.9.7
 
 ### Patch Changes

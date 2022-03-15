@@ -1,5 +1,17 @@
 # @backstage/plugin-code-coverage-backend
 
+## 0.1.28
+
+### Patch Changes
+
+- efc73db10c: Use `better-sqlite3` instead of `@vscode/sqlite3`
+- f24ef7864e: Minor typo fixes
+- Updated dependencies
+  - @backstage/backend-common@0.13.1
+  - @backstage/catalog-model@0.14.0
+  - @backstage/integration@0.8.1
+  - @backstage/catalog-client@0.10.0
+
 ## 0.1.27
 
 ### Patch Changes
