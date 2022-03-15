@@ -41,6 +41,8 @@ To avoid this situation, the permissions framework has support for filtering ite
 +   createConditionTransformer,
 +   ConditionTransformer,
 + } from '@backstage/plugin-permission-node';
+- import { add, getAll, getTodo, update } from './todos';
++ import { add, getAll, getTodo, TodoFilter, update } from './todos';
   import {
     todosListCreate,
     todosListUpdate,
@@ -52,24 +54,27 @@ To avoid this situation, the permissions framework has support for filtering ite
 +   const token = getBearerTokenFromAuthorizationHeader(
 +     req.header('authorization'),
 +   );
++
 +   const decision = (
 +     await permissions.authorize([{ permission: todosListRead }], {
 +       token,
 +     })
 +   )[0];
++
 +   if (decision.result === AuthorizeResult.DENY) {
 +     throw new NotAllowedError('Unauthorized');
 +   }
-
++
 +   if (decision.result === AuthorizeResult.CONDITIONAL) {
 +     const conditionTransformer: ConditionTransformer<TodoFilter> =
-+       createConditionTransformer(rules);
++       createConditionTransformer(Object.values(rules));
 +     const filter = conditionTransformer(decision.conditions) as TodoFilter;
 +     res.json(getAll(filter));
-+     return;
++   } else {
++     res.json(getAll());
 +   }
-
-   res.json(getAll());
++ }
+-   res.json(getAll());
   });
 ```
 
@@ -112,7 +117,5 @@ Now let's update our permission policy's handler to return a conditional result 
 ```
 
 Once the changes to the permission policy are saved, the UI should should show only the items you have created.
-
-// TODO(vinzscam): add support for boolean operators
 
 // TODO(vinzscam): add frontend documentation
